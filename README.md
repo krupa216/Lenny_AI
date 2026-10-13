@@ -5,6 +5,7 @@ The Lenny Growth Assistant is an AI-powered chatbot that helps users explore pro
 The project combines transcript search with a locally running language model, so answers can be based on relevant podcast content.
 
 **Workflow-**
+
 1.Podcast transcript files are placed in the project's transcript folder.
 
 2.The ingestion script reads the files and splits long transcripts into smaller text chunks.
@@ -35,6 +36,7 @@ TF-IDF - text retrieval	Helps identify transcript chunks relevant to a user's qu
 Uvicorn	Runs the FastAPI application server.
 
 **What Is RAG?**
+
 RAG stands for Retrieval-Augmented Generation.
 Instead of asking an AI model to answer using only its general knowledge, the application first retrieves relevant information from the podcast transcripts. It then provides that information to the language model as context for generating an answer.
 
@@ -46,6 +48,7 @@ Augmentation: Adds those passages to the model's input.
 Generation: The model writes a response using the question and supplied context.
 
 **Main Features**
+
 Ingest podcast transcript files.
 
 Split transcripts into smaller chunks.
@@ -59,6 +62,7 @@ Generate answers using a locally running Ollama model.
 Build a foundation for a podcast-based knowledge assistant.
 
 **Run Locally**
+
 Start PostgreSQL and make sure the project database is configured.
 
 Start Ollama and ensure the configured model is available.
